@@ -39,7 +39,7 @@ jobs:
         run: |
           mkdir -p td-libwebsockets-dev_${{env.version}}/usr/local/src
           cd td-libwebsockets-dev_${{env.version}}/usr/local/src
-          curl -L -o libwebsockets-${{env.version}}.tar.gz https://github.com/libwebsockets/libwebsockets/archive/${{env.version}}.tar.gz
+          curl -L -o libwebsockets-${{env.version}}.tar.gz https://github.com/warmcat/libwebsockets/archive/v${{env.version}}.tar.gz
           tar zvxf libwebsockets-${{env.version}}.tar.gz
           rm libwebsockets-${{env.version}}.tar.gz
       - name: Build .deb
