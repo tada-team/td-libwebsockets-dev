@@ -1,0 +1,9 @@
+#!/bin/bash
+set -ex
+
+cd /usr/local/src/libwebsockets-%VERSION%
+
+cmake -DLWS_MAX_SMP=1 .
+make
+make install
+ldconfig

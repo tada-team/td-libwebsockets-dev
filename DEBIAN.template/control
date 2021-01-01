@@ -1,0 +1,8 @@
+Package: td-libwebsockets-dev
+Version: %VERSION%
+Maintainer: Tada.team <info@tada.team>
+Architecture: all
+Section: devel
+Description: custom libwebsockets build
+Conflicts: libwebsockets-dev
+Depends: build-essential
