@@ -51,7 +51,6 @@ jobs:
       - name: Try install
         working-directory: dist
         run: |
-          sudo apt-get install -y gtk-doc-tools
           sudo dpkg -i td-libwebsockets-dev_${{env.version}}.deb
       - name: Install SSH Client
         uses: webfactory/ssh-agent@v0.4.1
