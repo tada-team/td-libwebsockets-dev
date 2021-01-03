@@ -33,7 +33,6 @@ jobs:
           dpkg-deb --build td-libwebsockets-dev_${{env.version}}
           mkdir -p dist
           mv td-libwebsockets-dev_${{env.version}}.deb dist
-          ls -lah dist
       - name: Try install
         working-directory: dist
         run: |
