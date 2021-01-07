@@ -1,6 +1,7 @@
 name: build
 env:
-  version: '4.1.6'
+#  version: '4.1.6'  # undefined symbol: lws_validity_confirmed
+  version: '3.2.0'
 
 on:
   push:
