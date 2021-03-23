@@ -40,7 +40,7 @@ Package: td-libwebsockets-test-server
 Section: utils
 Architecture: any
 Multi-Arch: foreign
-Depends: td-libwebsockets15 (= ${binary:Version}),
+Depends: td-libwebsockets (= ${binary:Version}),
 	td-libwebsockets-test-server-common (= ${source:Version}),
 	${shlibs:Depends}, ${misc:Depends}
 Description: lightweight C websockets library - test servers
