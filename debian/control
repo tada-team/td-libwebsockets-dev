@@ -11,7 +11,7 @@ Homepage: https://libwebsockets.org/
 #Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/libwebsockets.git/log/?h=debian-v2.4-stable
 Rules-Requires-Root: no
 
-Package: libwebsockets15
+Package: td-libwebsockets
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -22,11 +22,11 @@ Description: lightweight C websockets library
  .
  This package contains the shared library.
 
-Package: libwebsockets-dev
+Package: td-libwebsockets-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: libwebsockets15 (= ${binary:Version}), libev-dev, libssl-dev,
+Depends: td-libwebsockets (= ${binary:Version}), libev-dev, libssl-dev,
 	libuv1-dev, zlib1g-dev, libcap-dev, ${misc:Depends}
 Description: lightweight C websockets library - development files
  Libwebsockets is a lightweight pure C library for both websockets
@@ -36,12 +36,12 @@ Description: lightweight C websockets library - development files
  This package contains the header files needed for developing programs
  using libwebsockets and a static library.
 
-Package: libwebsockets-test-server
+Package: td-libwebsockets-test-server
 Section: utils
 Architecture: any
 Multi-Arch: foreign
-Depends: libwebsockets15 (= ${binary:Version}),
-	libwebsockets-test-server-common (= ${source:Version}),
+Depends: td-libwebsockets15 (= ${binary:Version}),
+	td-libwebsockets-test-server-common (= ${source:Version}),
 	${shlibs:Depends}, ${misc:Depends}
 Description: lightweight C websockets library - test servers
  Libwebsockets is a lightweight pure C library for both websockets
@@ -50,12 +50,12 @@ Description: lightweight C websockets library - test servers
  .
  This package contains several demonstration test servers.
 
-Package: libwebsockets-test-server-common
+Package: td-libwebsockets-test-server-common
 Section: utils
 Architecture: all
 Multi-Arch: foreign
-Breaks: libwebsockets-test-server (<< 1.6.0-1)
-Replaces: libwebsockets-test-server (<< 1.6.0-1)
+Breaks: td-libwebsockets-test-server (<< 1.6.0-1)
+Replaces: td-libwebsockets-test-server (<< 1.6.0-1)
 Depends: ${misc:Depends}
 Description: lightweight C websockets library - test servers data
  Libwebsockets is a lightweight pure C library for both websockets
