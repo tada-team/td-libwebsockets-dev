@@ -1,3 +1,9 @@
+libwebsockets (3.2.2-1) unstable; urgency=medium
+
+  * Bump libwebsockets version to 3.2.2
+
+ -- igo95862 <igo95862@yandex.ru>  Tue, 23 Mar 2021 00:00:00 +0000
+
 libwebsockets (3.2.1-3) unstable; urgency=medium
 
   * Build with IPv6 support.
